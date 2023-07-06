@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* Paleta de cores 
+Verde - #49a09d
+Roxo - #5f2c82
+
+*/
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #5f2c82;
+}
+
+section {
+        background-color: white;
+}
+
