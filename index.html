@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stylemedias.css">
 </head>
 <body>
     <main>
         <section id="login">
+            <div id="img"></div>
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente! Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
                     <form action="login.php" method="post" autocomplete="on">
-                        
-                            <input type="email" name="mail" id="i_mail">
-                            <input type="password" name="senha" id="i_pass">
+                            <div class="login">
+                                <span class="material-icons">person</span>     
+                                <label for="i_mail"></label>
+                                <input type="email" name="mail" id="i_mail" placeholder="Seu email" autocomplete="email" required maxlength="20">
+                            </div> 
+                            
+                            <div class="login">
+                                <span class="material-icons">vpn_key</span>
+                                <label for="i_pass"></label>
+                                <input type="password" name="senha" id="i_pass" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                            </div>
                         
                             <input type="submit" value="Entrar">
-                            <input type="reset" value="Esqueci minha senha">
+                            <a href="#">Esqueci minha senha
+                                <span class="material-icons">mail</span>
+
+                            </a>
                         
                     </form>
             </div>
 
-            <div id="img"></div>
+            
         </section>
     </main>
 </body>
